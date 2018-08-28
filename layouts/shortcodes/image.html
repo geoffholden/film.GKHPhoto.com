@@ -1,0 +1,34 @@
+<!-- image -->
+{{ with $.Page.Resources.GetMatch (index .Params 0)}}
+<figure>
+    <a href="{{ .RelPermalink }}"
+         data-lightbox="{{.Name}}"
+         title="{{ .Title }}"
+       >
+       <img
+         src="{{ (.Fit "400x400 smart").RelPermalink }}"
+         srcset="{{ (.Fit "400x400 smart").RelPermalink }} 1x, {{ (.Fit "800x800 smart").RelPermalink }} 2x"
+       />
+    </a>
+    <figcaption>
+        {{ .Title }}
+        {{ if .Params }}
+        <ul>
+        {{ with .Params.Camera }}
+            <li>Camera: {{ . }}</li>
+        {{ end }}
+        {{ with .Params.Film }}
+            <li>Film: {{ . }}</li>
+        {{ end }}
+        {{ with .Params.Develop }}
+            <li>Development: {{ . }}</li>
+        {{ end }}
+        {{ with .Params.Scan }}
+            <li>Scan: {{ . }}</li>
+        {{ end }}
+        </ul>
+        {{ end }}
+    </figcaption>
+</figure>
+{{ end }}
+<!-- image -->

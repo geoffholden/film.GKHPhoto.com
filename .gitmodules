@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:geoffholden/film.GKHPhoto.com.git
+	branch = gh-pages

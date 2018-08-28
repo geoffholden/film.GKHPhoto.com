@@ -1,0 +1,39 @@
+{{ partial "header.html" . }}
+{{ partial "masthead_hero.html" . }}
+
+<div id="main" role="main">
+    {{ partial "sidebar.html" . }}
+    <article class="page">
+        <div class="page_container">
+            <section class="page_content">
+                {{ partial "masthead_nav.html" . }}
+
+                {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+                {{ with .Content }}
+                    <div class="post-style" itemprop="articleBody">{{ . }}</div>
+                {{ end }}
+
+                {{ template "dl" . }}
+
+                {{ range $.Sections.ByTitle }}
+                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    {{ template "dl" . }}
+                {{ end }}
+
+            </section>
+        </div>
+    </article>
+</div>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
+
+{{ define "dl" }}
+<dl>
+    {{ range $.Pages.ByTitle }}
+    <dt><a href="{{ .RelPermalink }}">{{ .Title }}</a></dt>
+    {{ if .Description }}<dd>{{ .Description }}</dd>{{ end }}
+    </dd>
+    {{ end }}
+</dl>
+{{ end }}

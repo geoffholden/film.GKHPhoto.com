@@ -1,0 +1,20 @@
+<style type="text/css">
+.masthead-hero {
+  {{ template "findhero" . }}
+}
+</style>
+
+<div class="masthead-hero"></div>
+
+{{ define "findhero" }}
+    {{ $hero := .Resources.GetMatch "hero.{jpg,png}" }}
+    {{ if $hero }}
+        background-image: url({{ ($hero.Fit "1920x1080").RelPermalink }});
+    {{ else }}
+        {{ if .Parent }}
+            {{ template "findhero" .Parent }}
+        {{ else }}
+            background-color: grey;
+        {{ end }}
+    {{ end }}
+{{ end }}

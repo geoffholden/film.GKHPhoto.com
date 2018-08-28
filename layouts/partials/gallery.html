@@ -1,0 +1,43 @@
+{{ if or (.Resources.ByType "image" ) (.Params.Gallery) }}
+{{ $scratch := .Scratch }}
+{{ if not .Params.Gallery }}
+    {{ $scratch.Set "galleryimages" (.Resources.ByType "image") }}
+{{ else }}
+    {{ $camera := .Params.Gallery }}
+    {{ range .Site.RegularPages }}
+        {{ range .Resources.ByType "image" }}
+            {{ if eq $camera .Params.Camera }}
+                {{ $scratch.SetInMap "images" .RelPermalink . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ if $scratch.GetSortedMapValues "images" }}
+        {{ $scratch.Set "galleryimages" (first 10 (shuffle ($scratch.GetSortedMapValues "images") ) ) }}
+    {{ end }}
+    {{ $scratch.Delete "images" }}
+{{ end }}
+
+{{ with $scratch.Get "galleryimages" }}
+<div class="gallery">
+    <h2>Gallery</h2>
+    <div>
+    {{ range . }}
+        {{ if (ne .Name "hero.jpg") and (ne .Name "hero.png") }}
+            {{ $thumb := .Fill "150x150 smart" }}
+            <figure>
+                <a href="{{ (.Fit "1920x1080").RelPermalink }}" title="{{.Title}}" data-lightbox="gallery">
+                <img src="{{ (.Fill "150x150 smart").RelPermalink }}"
+                     srcset="{{ (.Fill "150x150 smart").RelPermalink }} 1x, {{ (.Fill "300x300 smart").RelPermalink }} 2x"
+                     />
+                </a>
+                <figcaption>
+                    {{ .Title }}
+                </figcaption>
+            </figure>
+        {{end }}
+    {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ $scratch.Delete "galleryimages" }}
+{{ end }}

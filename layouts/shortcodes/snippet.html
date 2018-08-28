@@ -1,0 +1,6 @@
+<!-- snippet -->
+{{ with .Site.GetPage "page" (index .Params 0) }}
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+{{ end }}
+<!-- snippet -->

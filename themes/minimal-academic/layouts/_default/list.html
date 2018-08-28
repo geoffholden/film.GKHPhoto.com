@@ -1,0 +1,47 @@
+{{ partial "header.html" . }}
+{{ partial "masthead_hero.html" . }}
+
+{{/* partial "homepage.html" . */}}
+
+<div id="main" role="main">
+    {{ partial "sidebar.html" . }}
+    <article class="page">
+        <div class="page_container">
+            <section class="page_content">
+                {{ partial "masthead_nav.html" . }}
+
+                {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+                {{ with .Content }}
+                    <div class="post-style" itemprop="articleBody">{{ . }}</div>
+                {{ end }}
+
+                {{ $paginator := .Paginate .Data.Pages }}
+                {{ range $paginator.Pages }}
+                <div>
+                    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                    {{ partial "post_metadata" (dict "content" . "is_list" 0) }}
+                    <div class="post-style">
+                        {{ if .Description }}
+                        {{ .Description }}
+                        {{ else if .Params.summary }}
+                        {{ printf "%s" .Params.summary | markdownify }}
+                        {{ else if .Truncated }}
+                        {{ printf "%s" .Summary | markdownify }}
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+
+                <center>
+                    <ul class="pagination">
+                        {{ template "_internal/pagination.html" . }}
+                    </ul>
+                </center>
+
+            </section>
+        </div>
+    </article>
+</div>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}
