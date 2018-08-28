@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Equipment on Film - GKH Photo</title>
+    <link>https://film.gkhphoto.com/equipment/</link>
+    <description>Recent content in Equipment on Film - GKH Photo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; Geoff Holden 2018</copyright>
+    <lastBuildDate>Tue, 28 Aug 2018 19:34:11 -0230</lastBuildDate>
+    
+	<atom:link href="https://film.gkhphoto.com/equipment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beseler Printmaker 35</title>
+      <link>https://film.gkhphoto.com/equipment/printmaker35/</link>
+      <pubDate>Sun, 26 Aug 2018 09:37:45 -0230</pubDate>
+      
+      <guid>https://film.gkhphoto.com/equipment/printmaker35/</guid>
+      <description>Printmaker 35   This is a small enlarger that I received with my initial batch of darkroom equipment. I picked up the manual on eBay afterwards, partially to know for sure where the condenser lens goes (on the bottom of the lamp housing, not on one of the &amp;lsquo;shelves&amp;rsquo;). It&amp;rsquo;s a condenser enlarger, with a 50mm lens installed for 35mm prints. It can project up to 11x14&amp;rdquo; on the baseboard, and larger if you reverse the column and project onto the floor.</description>
+    </item>
+    
+    <item>
+      <title>Darkroom</title>
+      <link>https://film.gkhphoto.com/equipment/darkroom/</link>
+      <pubDate>Thu, 23 Aug 2018 12:53:56 -0230</pubDate>
+      
+      <guid>https://film.gkhphoto.com/equipment/darkroom/</guid>
+      <description>Finished Darkroom   My darkroom is a 9&amp;rsquo;4&amp;rdquo; × 6&amp;rsquo;4&amp;rdquo; room in my basement. Along one side is a custom cabinet with both open and closed storage, and a single drawer underneath. The top is some kitchen counter top that I salvaged when the installers put a scratch in it. Above the cabinet, I strung some rope between two L-brackets that I can use to hang prints to dry.</description>
+    </item>
+    
+  </channel>
+</rss>

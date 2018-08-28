@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Film - GKH Photo</title>
+    <link>https://film.gkhphoto.com/about/</link>
+    <description>Recent content in About on Film - GKH Photo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; Geoff Holden 2018</copyright>
+    <lastBuildDate>Tue, 28 Aug 2018 19:34:11 -0230</lastBuildDate>
+    
+	<atom:link href="https://film.gkhphoto.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

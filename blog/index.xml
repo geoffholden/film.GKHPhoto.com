@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Film - GKH Photo</title>
+    <link>https://film.gkhphoto.com/blog/</link>
+    <description>Recent content in Blog on Film - GKH Photo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; Geoff Holden 2018</copyright>
+    <lastBuildDate>Tue, 28 Aug 2018 19:34:11 -0230</lastBuildDate>
+    
+	<atom:link href="https://film.gkhphoto.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Canonet as Teacher</title>
+      <link>https://film.gkhphoto.com/blog/canonet_as_teacher/</link>
+      <pubDate>Tue, 28 Aug 2018 19:22:53 -0230</pubDate>
+      
+      <guid>https://film.gkhphoto.com/blog/canonet_as_teacher/</guid>
+      <description>Mostly inspired by Mike Johnston&amp;rsquo;s The Leica as Teacher post. I&amp;rsquo;m going to try to primarily use my Canonet 28 for a while. Despite the fact that it&amp;rsquo;s probably not the best camera for the type of photography that I like taking (more landscape, less street), removing the distraction of multiple lenses, colour filters, etc. for a while should make me a better photographer in general.
+I am not committing to a particular shooting or printing schedule, or to a set length to the project, just because I think with other life commitments, I&amp;rsquo;d be setting myself up to fail.</description>
+    </item>
+    
+  </channel>
+</rss>
