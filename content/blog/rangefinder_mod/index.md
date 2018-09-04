@@ -1,7 +1,7 @@
 ---
 title: "Simple Rangefinder Focus Modification"
-date: 2018-08-26T10:23:32-02:30
-draft: true
+date: 2018-09-04T09:28:54-02:30
+draft: false
 
 resources:
 - name: IMG_2321.jpg

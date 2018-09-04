@@ -17,4 +17,4 @@ I picked up this camera on eBay in 2009 for less than $20. The only issue with i
 
 Once the battery issue was sorted, the camera turned out to be a good performer. The lens is sharp, and the meter seems to be accurate enough. Unless you put it in flash mode (fixed 1/30 shutter and manual aperture), the camera is fully automatic (exposure-wise). A needle in the viewfinder shows you what shutter speed will be used, and the camera picks the aperture and doesn't even indicate what it will be.
 
-It's a manual-focus camera, with the traditional double-image rangefinder. {{< comment >}}The second image is getting a bit dim though, so I did this [simple mod]({{#< relref "/blog/rangefinder_mod" >}}) to make it easier to focus.{{< /comment >}}
+It's a manual-focus camera, with the traditional double-image rangefinder. The second image is getting a bit dim though, so I did this [simple mod]({{< relref "/blog/rangefinder_mod" >}}) to make it easier to focus.
