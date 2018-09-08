@@ -2,7 +2,7 @@
 
 IFS="
 "
-files=$(find $1 -name "*.jpg")
+files=$(find $(dirname $1) -name "*.jpg")
 echo "resources:"
 for file in $files; do
     echo "- name: $(basename $file)"
