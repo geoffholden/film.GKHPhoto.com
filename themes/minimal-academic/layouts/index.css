@@ -875,3 +875,9 @@ h2 a:hover {
   color: #8b0000;
 }
 
+p.signature {
+  text-align: right;
+  max-width: 80%;
+  margin-bottom: 0;
+}
+
