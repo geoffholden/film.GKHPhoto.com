@@ -20,6 +20,8 @@ resources:
 
 I developed my first rolls of film in the new darkroom. One roll was from last week, the other was one that was shot ages ago and forgotten in the fridge.
 
+<!--more-->
+
 {{< image "IMG_20180907_122944.jpg" >}}
 
 I used my [plastic tank and reels]({{< ref "/equipment/tanks_reels" >}}) and D-76 in the 1:1 dilution. I get all my development times from the [massive development chart](https://www.digitaltruth.com/devchart.php) and their Android app (which doubles as my timer).
