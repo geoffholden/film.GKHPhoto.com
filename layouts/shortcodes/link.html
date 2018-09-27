@@ -1,0 +1,9 @@
+<!-- link -->
+{{ with $.Page.Resources.GetMatch (index .Params 0)}}
+<a href="{{ .RelPermalink }}">
+{{ end }}
+{{ .Inner }}
+{{ with $.Page.Resources.GetMatch (index .Params 0)}}
+</a>
+{{end}}
+<!-- link -->
